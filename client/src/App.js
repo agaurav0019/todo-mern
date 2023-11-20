@@ -1,10 +1,12 @@
 import './App.css';
 import Header from './components/Header';
+import TodoForm from './components/todoForm/TodoForm';
 
 function App() {
   return (
     <div>
       <Header/>
+      <TodoForm/>
     </div>
   );
 }
