@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server Side Logic",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agaurav0019/todo-mern.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agaurav0019/todo-mern/issues"
+  },
+  "homepage": "https://github.com/agaurav0019/todo-mern#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^2.2.36",
+    "mongoose": "^8.0.1",
+    "nodemon": "^3.0.1"
+  }
+}
