@@ -1,17 +1,21 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./TodoForm.css";
+import { addNewTodo } from "../../redux/actions";
+import { useDispatch } from "react-redux";
 
 const TodoForm = () => {
-
   const [text, setText] = useState("");
+  const dispatch = useDispatch();
 
-  const onFormSubmit = ()=>{
-
+  const onFormSubmit = (event) => {
+    event.preventDefault();
+    dispatch(addNewTodo(text));
+    setText('');
   };
 
-  const onInputChange=(event)=>{
+  const onInputChange = (event) => {
     setText(event.target.value);
-  }
+  };
 
   return (
     <form className="form" onSubmit={onFormSubmit}>
